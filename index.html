@@ -470,6 +470,59 @@
       background: #0f0f0f;
     }
 
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .client-videos-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .client-videos-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .client-video-card {
+      overflow: hidden;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: var(--shadow);
+    }
+
+    .client-video-card .instagram-embed {
+      border: 0;
+      border-radius: 0;
+      min-height: 560px;
+    }
+
+    .client-video-card .instagram-embed iframe {
+      min-height: 560px;
+    }
+
+    .client-video-caption {
+      padding: 18px;
+    }
+
+    .client-video-caption strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--gold);
+    }
+
+    .client-video-caption p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
     .offer-box {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -634,6 +687,7 @@
       .hero-grid,
       .offer-box,
       .video-showcase,
+      .video-grid,
       .grid-4,
       .grid-3,
       .grid-2 {
@@ -642,6 +696,14 @@
 
       .nav {
         display: none;
+      }
+
+      .client-videos-header {
+        display: block;
+      }
+
+      .client-videos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .hero {
@@ -676,6 +738,15 @@
 
       .instagram-embed,
       .instagram-embed iframe {
+        min-height: 540px;
+      }
+
+      .client-videos-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .client-video-card .instagram-embed,
+      .client-video-card .instagram-embed iframe {
         min-height: 540px;
       }
     }
@@ -786,13 +857,24 @@
             </ul>
           </div>
 
-          <div class="instagram-embed">
-            <iframe
-              src="https://www.instagram.com/p/DVpHu2uAO7X/embed"
-              allowtransparency="true"
-              scrolling="no"
-              title="Vídeo da Mídia em Foco no Instagram"
-            ></iframe>
+          <div class="video-grid">
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DVpHu2uAO7X/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo da Mídia em Foco no Instagram"
+              ></iframe>
+            </div>
+
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DYIpzqSBKbx/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo da Mídia em Foco no Instagram"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -933,6 +1015,92 @@
             <div class="number">3</div>
             <h3>Você recebe pronto para postar</h3>
             <p>Seu material chega pronto para usar no Instagram, anúncios e WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos-clientes">
+      <div class="container">
+        <div class="client-videos-header">
+          <div>
+            <div class="badge">Vídeos de clientes</div>
+            <h2 class="section-title">Projetos reais para marcas que querem aparecer melhor.</h2>
+            <p class="section-subtitle">
+              Alguns exemplos de conteúdos criados para valorizar negócios, apresentar ofertas
+              e gerar mais atenção nas redes sociais.
+            </p>
+          </div>
+
+          <a
+            class="btn btn-secondary"
+            href="https://wa.me/5519989877559?text=Ol%C3%A1%2C%20vi%20os%20v%C3%ADdeos%20de%20clientes%20e%20quero%20um%20v%C3%ADdeo%20para%20minha%20empresa."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quero um vídeo assim
+          </a>
+        </div>
+
+        <div class="client-videos-grid">
+          <article class="client-video-card">
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DYmengMN78G/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo de cliente da Mídia em Foco"
+              ></iframe>
+            </div>
+            <div class="client-video-caption">
+              <strong>Cliente em destaque</strong>
+              <p>Conteúdo pensado para prender atenção e fortalecer a percepção da marca.</p>
+            </div>
+          </article>
+
+          <article class="client-video-card">
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DXUkaE-jjWc/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo de cliente da Mídia em Foco"
+              ></iframe>
+            </div>
+            <div class="client-video-caption">
+              <strong>Divulgação profissional</strong>
+              <p>Material pronto para redes sociais, anúncios e envio direto no WhatsApp.</p>
+            </div>
+          </article>
+
+          <article class="client-video-card">
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DWPz9pWmcfj/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo de cliente da Mídia em Foco"
+              ></iframe>
+            </div>
+            <div class="client-video-caption">
+              <strong>Apresentação com impacto</strong>
+              <p>Vídeo criado para gerar curiosidade logo nos primeiros segundos.</p>
+            </div>
+          </article>
+
+          <article class="client-video-card">
+            <div class="instagram-embed">
+              <iframe
+                src="https://www.instagram.com/p/DVgEqCyjv1S/embed"
+                allowtransparency="true"
+                scrolling="no"
+                title="Vídeo de cliente da Mídia em Foco"
+              ></iframe>
+            </div>
+            <div class="client-video-caption">
+              <strong>Mais valor para a oferta</strong>
+              <p>Conteúdo visual para deixar a comunicação mais moderna e convincente.</p>
+            </div>
           </article>
         </div>
       </div>
