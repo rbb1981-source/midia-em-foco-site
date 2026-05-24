@@ -12,15 +12,15 @@ const config: Config = {
         display: ["var(--font-display)", "sans-serif"]
       },
       colors: {
-        ink: "#07100f",
-        neon: "#25f4a7",
-        ocean: "#19b7ff",
-        violet: "#8f5cff",
+        ink: "#0b0b0a",
+        neon: "#f2c94c",
+        ocean: "#ffd86e",
+        violet: "#9f8f63",
         gold: "#f2c94c"
       },
       boxShadow: {
-        glow: "0 0 36px rgba(37, 244, 167, 0.18)",
-        blueglow: "0 0 42px rgba(25, 183, 255, 0.18)"
+        glow: "0 0 36px rgba(242, 201, 76, 0.2)",
+        blueglow: "0 0 42px rgba(255, 216, 110, 0.16)"
       },
       animation: {
         float: "float 8s ease-in-out infinite",
@@ -37,8 +37,8 @@ const config: Config = {
           "100%": { opacity: "1", transform: "translateY(0)" }
         },
         pulseSoft: {
-          "0%, 100%": { boxShadow: "0 0 0 0 rgba(37, 244, 167, 0.22)" },
-          "50%": { boxShadow: "0 0 0 12px rgba(37, 244, 167, 0)" }
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(242, 201, 76, 0.24)" },
+          "50%": { boxShadow: "0 0 0 12px rgba(242, 201, 76, 0)" }
         }
       }
     }

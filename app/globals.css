@@ -20,15 +20,15 @@ body {
   min-height: 100vh;
   color: #f7fff9;
   background:
-    radial-gradient(circle at 20% 0%, rgba(37, 244, 167, 0.18), transparent 26rem),
-    radial-gradient(circle at 80% 12%, rgba(143, 92, 255, 0.2), transparent 28rem),
-    radial-gradient(circle at 50% 58%, rgba(25, 183, 255, 0.1), transparent 30rem),
-    linear-gradient(180deg, #050807 0%, #07100f 42%, #040706 100%);
+    radial-gradient(circle at 20% 0%, rgba(242, 201, 76, 0.18), transparent 26rem),
+    radial-gradient(circle at 82% 10%, rgba(255, 216, 110, 0.14), transparent 28rem),
+    radial-gradient(circle at 50% 58%, rgba(159, 143, 99, 0.1), transparent 30rem),
+    linear-gradient(180deg, #050504 0%, #10100e 42%, #050504 100%);
 }
 
 ::selection {
-  color: #03100b;
-  background: #25f4a7;
+  color: #0b0b0a;
+  background: #f2c94c;
 }
 
 .noise {
@@ -57,7 +57,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #f7fff9, #25f4a7 44%, #19b7ff 72%, #8f5cff);
+  background: linear-gradient(90deg, #ffffff, #f2c94c 42%, #ffd86e 76%, #9f8f63);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

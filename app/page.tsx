@@ -32,9 +32,9 @@ import {
 const CONTACT = {
   brand: "Mídia em Foco IA",
   domain: "midiaemfoco.ia.br",
-  email: "comercial@midiaemfoco.ia.br",
-  whatsappDisplay: "(19) 99833-2051",
-  whatsappNumber: "5519998332051",
+  email: "atendimento@midiaemfoco.ia.br",
+  whatsappDisplay: "(19) 98987-7559",
+  whatsappNumber: "5519989877559",
   message:
     "Olá, quero uma demonstração da Mídia em Foco IA para automatizar minha empresa."
 };
