@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Manrope";
+  --font-display: "Space Grotesk";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #050807;
+}
+
+body {
+  min-height: 100vh;
+  color: #f7fff9;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(37, 244, 167, 0.18), transparent 26rem),
+    radial-gradient(circle at 80% 12%, rgba(143, 92, 255, 0.2), transparent 28rem),
+    radial-gradient(circle at 50% 58%, rgba(25, 183, 255, 0.1), transparent 30rem),
+    linear-gradient(180deg, #050807 0%, #07100f 42%, #040706 100%);
+}
+
+::selection {
+  color: #03100b;
+  background: #25f4a7;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.08;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.section-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #f7fff9, #25f4a7 44%, #19b7ff 72%, #8f5cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.soft-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.embed-frame iframe {
+  width: 100%;
+  min-height: 560px;
+  border: 0;
+  display: block;
+  background: #070a09;
+}
+
+@media (max-width: 640px) {
+  .embed-frame iframe {
+    min-height: 520px;
+  }
+}
