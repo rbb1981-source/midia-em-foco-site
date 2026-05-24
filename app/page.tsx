@@ -119,13 +119,34 @@ const demoCards = [
   }
 ];
 
-const demoVideos = [
-  "https://www.instagram.com/p/DVpHu2uAO7X/embed",
-  "https://www.instagram.com/p/DYIpzqSBKbx/embed",
-  "https://www.instagram.com/p/DYmengMN78G/embed",
-  "https://www.instagram.com/p/DXUkaE-jjWc/embed",
-  "https://www.instagram.com/p/DWPz9pWmcfj/embed",
-  "https://www.instagram.com/p/DVgEqCyjv1S/embed"
+const commercialVideos = [
+  {
+    label: "Demonstração 1",
+    src: "https://www.instagram.com/p/DVpHu2uAO7X/embed"
+  },
+  {
+    label: "Demonstração 2",
+    src: "https://www.instagram.com/p/DYIpzqSBKbx/embed"
+  }
+];
+
+const clientVideos = [
+  {
+    label: "Cliente 1",
+    src: "https://www.instagram.com/p/DYmengMN78G/embed"
+  },
+  {
+    label: "Cliente 2",
+    src: "https://www.instagram.com/p/DXUkaE-jjWc/embed"
+  },
+  {
+    label: "Cliente 3",
+    src: "https://www.instagram.com/p/DWPz9pWmcfj/embed"
+  },
+  {
+    label: "Cliente 4",
+    src: "https://www.instagram.com/p/DVgEqCyjv1S/embed"
+  }
 ];
 
 function SectionHeading({
@@ -393,16 +414,46 @@ export default function HomePage() {
           />
 
           <div className="grid gap-5 lg:grid-cols-2">
-            {demoVideos.slice(0, 4).map((src, index) => (
-              <article className="glass overflow-hidden rounded-3xl" key={src}>
+            {commercialVideos.map((video, index) => (
+              <article className="glass overflow-hidden rounded-3xl" key={video.src}>
                 <div className="border-b border-white/10 px-5 py-4">
-                  <span className="text-sm font-bold text-white/72">Demonstração {index + 1}</span>
+                  <span className="text-sm font-bold text-white/72">{video.label}</span>
                 </div>
                 <div className="embed-frame bg-ink">
-                  <iframe src={src} title={`Vídeo comercial IA ${index + 1}`} scrolling="no" />
+                  <iframe src={video.src} title={`Vídeo comercial IA ${index + 1}`} scrolling="no" />
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="mt-14">
+            <div className="mb-6 flex flex-col justify-between gap-3 md:flex-row md:items-end">
+              <div>
+                <span className="text-sm font-extrabold uppercase tracking-[0.22em] text-neon">
+                  Vídeos de clientes
+                </span>
+                <h3 className="mt-3 font-display text-2xl font-bold text-white md:text-3xl">
+                  Trabalhos reais para negócios que já querem aparecer melhor
+                </h3>
+              </div>
+              <a className="inline-flex items-center gap-2 text-sm font-extrabold text-neon" href={whatsappUrl} target="_blank" rel="noreferrer">
+                Quero um vídeo assim
+                <ChevronRight size={17} />
+              </a>
+            </div>
+
+            <div className="grid gap-5 lg:grid-cols-2">
+              {clientVideos.map((video, index) => (
+                <article className="glass overflow-hidden rounded-3xl" key={video.src}>
+                  <div className="border-b border-white/10 px-5 py-4">
+                    <span className="text-sm font-bold text-white/72">{video.label}</span>
+                  </div>
+                  <div className="embed-frame bg-ink">
+                    <iframe src={video.src} title={`Vídeo de cliente ${index + 1}`} scrolling="no" />
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
